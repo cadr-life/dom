@@ -33,7 +33,7 @@
    (let* ((fname (oget *man-db name)))
      (if fname fname "man/man0.txt")))
 
-
+(export '(man))
 (defun man (topic)
     (let* ((res-pref (man-prefix topic))
            (hm (res-refer res-pref)))
