@@ -3,6 +3,7 @@ var reqXHRsendNull = function (req) {
       req.send(null);
 }
 
+// (#j:opNew #j:window "XMLHttpRequest")
 var opNew =  function () {
    var args = [].concat(null,Array.prototype.slice.call(arguments,2));
    var fn = arguments[0][arguments[1]];
@@ -10,6 +11,7 @@ var opNew =  function () {
    };
 
 
+// (#j:opEval "var dd = {}")
 var opEval = function (s) { 
      var res = window.eval(s); 
      if (res === undefined) { 
