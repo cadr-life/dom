@@ -4,7 +4,7 @@ var reqXHRsendNull = function (req) {
       req.send(null);
 }
 
-//
+//!!!
 // (#j:opNew #j:window "XMLHttpRequest")
 var opNew =  function () {
    var args = [].concat(null,Array.prototype.slice.call(arguments,2));
@@ -12,8 +12,6 @@ var opNew =  function () {
    return new (Function.prototype.bind.apply(fn,args))();
    };
 
-// branch testing
-//
 // (#j:opEval "var dd = {}")
 var opEval = function (s) { 
      var res = window.eval(s); 
